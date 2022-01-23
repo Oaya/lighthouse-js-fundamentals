@@ -68,41 +68,158 @@
 //   return result;
 // }
 
-function calculateRectangleArea(length, width) {
-  if (length <= 0 || width <= 0) {
-    return undefined;
-  }
-  let result = length * width;
+// function calculateRectangleArea(length, width) {
+//   if (length <= 0 || width <= 0) {
+//     return undefined;
+//   }
+//   let result = length * width;
 
-  return result;
-}
+//   return result;
+// }
 
-function calculateTriangleArea(base, height) {
-  if (base <= 0 || height <= 0) {
-    return undefined;
-  }
-  let result = (base * height) / 2;
+// function calculateTriangleArea(base, height) {
+//   if (base <= 0 || height <= 0) {
+//     return undefined;
+//   }
+//   let result = (base * height) / 2;
 
-  return result;
-}
+//   return result;
+// }
 
-function calculateCircleArea(radius) {
-  if (radius <= 0) {
-    return undefined;
-  }
-  let result = Math.PI * radius * radius;
+// function calculateCircleArea(radius) {
+//   if (radius <= 0) {
+//     return undefined;
+//   }
+//   let result = Math.PI * radius * radius;
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(calculateRectangleArea(10, 5)); // should print 50
-console.log(calculateRectangleArea(1.5, 2.5)); // should print 3.75
-console.log(calculateRectangleArea(10, -5)); // should print undefined
+// function range(start, end, step) {
+//   let array = [];
+//   if (
+//     start === undefined ||
+//     end === undefined ||
+//     step === undefined ||
+//     start > end ||
+//     step <= 0
+//   ) {
+//     return array;
+//   } else {
+//     for (let i = start; i <= end; i = i + step) {
+//       array.push(i);
+//       console.log(array);
+//     }
+//     return array;
+//   }
+// }
+// console.log(range(0, 10, 2));
+// console.log(range(10, 30, 5));
+// console.log(range(-5, 2, 3));
 
-console.log(calculateTriangleArea(10, 5)); // should print 25
-console.log(calculateTriangleArea(3, 2.5)); // should print 3.75
-console.log(calculateTriangleArea(10, -5)); // should print undefined
+// function lastIndexOf(array, index) {
+//   const result = array.lastIndexOf(index);
+//   return result;
+// }
 
-console.log(calculateCircleArea(10)); // should print 314.159...
-console.log(calculateCircleArea(3.5)); // should print 38.484...
-console.log(calculateCircleArea(-1)); // should print undefined
+// function concat(arr1, arr2) {
+//   const arr3 = arr1.concat(arr2);
+//   return arr3;
+// }
+
+// function smartGarbage(trash, bins) {
+//   if (trash === "waste") {
+//     bins.waste = bins.waste + 1;
+//   } else if (trash === "recycling") {
+//     bins.recycling = bins.recycling + 1;
+//   } else if (trash === "compost") {
+//     bins.compost = bins.compost;
+//   }
+//   console.log(bins);
+//   return bins;
+// }
+// smartGarbage("recycling", { waste: 4, recycling: 2, compost: 5 });
+
+// function carPassing(cars, speed) {
+//   let car = { time: Date.now(), speed: speed };
+//   cars.push(car);
+//   return cars;
+// }
+
+// const cars = [
+//   {
+//     time: 1568329654807,
+//     speed: 40,
+//   },
+//   {
+//     time: 1568329821632,
+//     speed: 42,
+//   },
+//   {
+//     time: 1568331115463,
+//     speed: 35,
+//   },
+// ];
+// const speed = 38;
+
+// carPassing(cars, speed);
+
+// const vegetables = [
+//   {
+//     submitter: "Old Man Franklin",
+//     redness: 10,
+//     plumpness: 5,
+//   },
+//   {
+//     submitter: "Sally Tomato-Grower",
+//     redness: 20,
+//     plumpness: 8,
+//   },
+//   {
+//     submitter: "Hamid Hamidson",
+//     redness: 111,
+//     plumpness: 3,
+//   },
+// ];
+
+// const metric = "redness";
+
+// function judgeVegetable(array, charactor) {
+//   var check = array[0][charactor];
+//   var wonSubmitter = array[0].submitter;
+
+//   //for loop the vegetable array to check the charactor//
+//   for (let i = 1; i < array.length; i++) {
+//     if (array[i][charactor] > check)
+//       //change the submitter//
+//       wonSubmitter = array[i].submitter;
+//   }
+
+//   console.log(wonSubmitter);
+//   return wonSubmitter;
+// }
+
+// judgeVegetable(vegetables, metric);
+// Loopy lighthouse//
+// function loopyLighthouse(range, multiples, words) {
+//   for (let i = range[0]; i <= range[1]; i++) {
+//     if ([i] % (multiples[0] * multiples[1]) === 0) {
+//       console.log(words[0] + words[1]);
+//     } else if ([i] % multiples[0] === 0) {
+//       console.log(words[0]);
+//     } else if ([i] % multiples[1] === 0) {
+//       console.log(words[1]);
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
+// loopyLighthouse([15, 90], [2, 5], ["Batty", "Beacon"]);
+
+// //Merge Arrays//
+// function merge(arr1, arr2) {
+//   let arr3 = arr1.concat(arr2);
+//   arr3.sort();
+//   return arr3;
+// }
+// console.log(merge([4, 5, 6], [1, 2, 3, 4]), "=?", [1, 2, 3, 4, 4, 5, 6]);
